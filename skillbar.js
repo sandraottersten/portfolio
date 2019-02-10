@@ -1,3 +1,8 @@
+$(window).scroll(function(){
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+  //250 is fade pixels
+  });
+
 const subjects = [
   {subject: "HTML", level: 95},
   {subject: "CSS", level: 85},
