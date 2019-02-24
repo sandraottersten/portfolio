@@ -4,12 +4,12 @@ $(window).scroll(function(){
   });
 
 const subjects = [
-  {subject: "HTML", level: 95},
-  {subject: "CSS", level: 85},
-  {subject: "JavaScript", level: 75},
-  {subject: "Vue.js", level: 85},
-  {subject: "Photoshop", level: 75},
-  {subject: "Table tennis", level: 25}
+  {subject: "HTML", level: 90},
+  {subject: "CSS", level: 75},
+  {subject: "JavaScript", level: 70},
+  {subject: "Vue.js", level: 80},
+  {subject: "Photoshop", level: 80},
+  {subject: "Table tennis", level: 50}
 ];
 var num = 1;
 
