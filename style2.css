@@ -30,11 +30,6 @@
     margin-bottom: 30px;
     position: relative;
 }
-@media screen and (max-width: 600px) {
-  .skill {
-    margin-bottom: 20px;
-  }
-}
 .skill:before{
     width: 100%;
     height: 8px;

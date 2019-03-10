@@ -272,6 +272,7 @@ height: 350px;
 .e-mail {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 
 @media all and (max-width: 900px) {
