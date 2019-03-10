@@ -2,7 +2,7 @@
 
 .wrapper{
     width: 400px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 @media screen and (max-width: 1060px) {
   .wrapper {

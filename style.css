@@ -12,7 +12,8 @@ html {
 
 body {
   position: relative;
-  font: normal 16px/1.9em "Inter UI", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
   height: 100%
@@ -28,31 +29,39 @@ h1 {
 }
 
 p {
-  margin: 2em 0 2em;
+  margin: 1em 0 1em;
 }
 .random-list {
   list-style-type: none;
-  padding: 10px 0 30px;
+  padding: 10px 0 20px;
 }
 .btn {
   width: 12rem;
-  background: white;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
   border-radius: 3px;
-  color: black;
   text-decoration: none;
   font-weight: 600;
 }
+.white {
+  border: 1px solid white;
+  color: white;
+}
+
+.black {
+  border: 1px solid black;
+  color: black;
+}
+
 .btn:hover {
-    background: black;
-    color: white;
+    background: rgba(255, 255, 255, .4);
   }
 
 .single-page-header {
-  font-family: Inter UI, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 100px;
   font-weight: 700;
   line-height: 1em
@@ -174,7 +183,7 @@ height: 350px;
 }
 
 .grid-item-header {
-  font-family: Inter UI, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   position: relative;
   z-index: 10;
   font-size: 50px;
@@ -204,13 +213,13 @@ height: 350px;
 }
 
 @media all and (max-width: 800px) {
-  .grid-item-wide .grid-item-header {
+  .grid-item-header {
     margin-top: 0
   }
 }
 
 @media all and (max-width: 800px) {
-  .grid-item-text, .grid-item-wide .grid-item-text {
+  .grid-item-text {
     max-width: 90%;
     padding-bottom: 40px
   }
@@ -262,15 +271,17 @@ height: 350px;
 
 .e-mail {
   text-decoration: none;
+  color: white;
 }
 
 @media all and (max-width: 900px) {
   .e-mail {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 #linkedin {
   width: 3rem;
+  margin: .7rem;
 }
 
 .heroSection {
@@ -306,13 +317,19 @@ height: 350px;
 
 .header-subheader {
   position: absolute;
-  padding: 0 20px;
+  padding: 0 23px;
   top: 20.5%;
   left: 0;
   right: 0;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 600
+}
+
+@media all and (max-width: 600px) {
+  .header-subheader {
+    font-size: 1.2rem;
+  }
 }
 
 .gridItems-peak {
@@ -337,10 +354,15 @@ height: 350px;
 .grid-item-project1 {
   background: url('./img/ticketapp2.jpg');
   background-size: 800px;
-  background-position: center top;
+  background-position: 80% top;
   justify-content: flex-start;
 }
-
+@media all and (max-width: 900px) {
+  .grid-item-project1 {
+    background-size: 800px;
+    background-position: center top;
+  }
+}
 .grid-item-project2 {
   background: url('./img/quiz.jpg');
   background-size: 1000px;
@@ -350,12 +372,15 @@ height: 350px;
 @media all and (max-width: 900px) {
   .grid-item-project2 {
     background-size: 1000px;
-    background-position: 20% bottom;
+    background-position: 20% top;
   }
 }
 
-.grid-item-github {
-  background-color: rgb(251, 160, 39);
+.grid-item-project3 {
+  background: url('./img/donut.jpg');
+  background-size: 700px;
+  background-position: center top;
+  justify-content: flex-start;
 }
 
 .grid-item-random {
